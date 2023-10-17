@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сокращение URL</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+
+<body>
+    <form class="form" name="edit">
+        <h1 class="form__title">Сокращение ссылок</h1>
+        <input class="form__input" id="url-input" type="url" name="url" placeholder="Полный URL-адрес" required>
+        <input class="form__input" id="short-key-input" type="text" minlength="2" maxlength="20" name="short_key"
+            placeholder="Свое сокращение">
+        <button class="button form__submit" type="submit" aria-label="Сократить">Сократить</button>
+        <div class="form__result">
+            <p id="message"></p>
+            <a id="link" href="" target="_blank"></a>
+        </div>
+    </form>
+</body>
+
+<script src="components.js"></script>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,8 @@
+AddDefaultCharset utf-8
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^frontend.*$ frontend/index.html [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [L,QSA]
